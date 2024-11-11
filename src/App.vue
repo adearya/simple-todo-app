@@ -13,12 +13,12 @@ onMounted(() => {
 });
 
 const totalTodo = computed(() => {
-  todos.list.length;
+  return todos.list.length;
 })
 
 const saveToLocalStorage = () => {
   localStorage.setItem("todos", JSON.stringify(todos.list));
-}
+};
 
 const addTodo = () => {
   todos.list.unshift({
@@ -74,4 +74,5 @@ const doneTodo = (todoIndex) => {
       <List :todos="todos.list" @deleteTodo="deleteTodo" @doneTodo="doneTodo" />
     </div>
   </div>
+        <div class="mb-4 text-center text-gray-500 text-sm">Created by adearyabimantara</div>
 </template>
