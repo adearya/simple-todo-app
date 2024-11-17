@@ -72,7 +72,7 @@ const doneTodo = (todoIndex) => {
       </div>
       <p class="text-gray-600 mb-4">Total todos: {{ totalTodo }}</p>
       <List :todos="todos.list" @deleteTodo="deleteTodo" @doneTodo="doneTodo" />
+      <div class="mt-8 text-center text-gray-500 text-sm">Created by official.adearya.dev</div>
     </div>
   </div>
-        <div class="mb-4 text-center text-gray-500 text-sm">Created by adearyabimantara</div>
 </template>
